@@ -1,0 +1,32 @@
+/* Mobile First o Desktop First */
+/* el ancho estandar de un celular es 320px */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.hijo{
+    width: 80vw; /* vw es el porcentaje dentro de un padre. % es el porcentaje de toda la página, independientemente de si es hijo o padre de algo */
+    height: 200px;
+    background-color: red;
+    border: 1px solid black;
+
+}
+
+/* cuando el ancho de mi pantalla sea mayor a 1000px */
+/* siempre mediaqueries va abajo */
+@media screen and (min-width: 1000px){
+    .padre{
+        background-color: aqua;
+    }
+
+}
